@@ -1,0 +1,241 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/*头部：可以作为标准样式在多个页面使用*/
+.common-header{
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(to bottom,#fff,#e0e0e0);
+  /*position: fixed;*/
+}
+.common-header-l{
+  width: 40px;
+  height: 44px;
+  position: relative;
+}
+.common-header-l:before{
+  width: 13px;
+  height: 20px;
+  background-position:-24px 0
+}
+.common-header-r {
+  width: 42px;
+  height: 44px;
+  position: relative;
+}
+.common-header-r:before{
+  width: 18px;
+  height: 20px;
+  background-position: -60px 0;
+}
+.common-header-c{
+  margin-left: 40px;
+  margin-right: 42px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+}
+
+
+/*安全支付部分*/
+.safe-pay{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.safe-pay p{
+  font-size: 14px;
+  position: relative;
+}
+.safe-pay>p:before{
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  background: url("../images/safe_icon.png") 0 0 no-repeat;
+  background-size:100% ;
+}
+
+
+
+/*购物车部分*/
+.shoppingCar{
+  margin-top: 16px;
+  width: 100%;border-top: 1px solid #ccc;
+}
+.shoppingCar .total{
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.total-l{
+  width: 40px;
+  height: 35px;
+  position: relative;
+}
+
+.total-l input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: relative;
+}
+ .total-l input:before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+.total-r{
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+.total-c{
+  margin-left: 40px;
+  margin-right: 160px;
+  height: 100%;
+  font-size: 14px;
+  line-height: 35px;
+  text-indent: 30px;
+  position: relative;
+}
+.total-c:before{
+  width: 20px;
+  height: 15px;
+  left: 10px;
+}
+.single{
+  width: 100%;
+  padding: 10px 0;
+}
+.single-1{
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.imgdiv{
+  width: 80px;
+}
+.imgdiv img{
+  width: 100%;
+}
+.texdiv{
+  margin-left: 120px;
+}
+.txt-content{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.txt-action{
+  margin-top: 25px;
+}
+.txt-action .btn{
+  width: 116px;
+  border: 1px solid #ccc;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+}
+.txt-action .btn span{
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+  width: 33.33%;
+  height: 100%;
+}
+.txt-action span input{
+  width: 100%;
+  text-align: center;
+  background:none;
+}
+.txt-action .del {
+  width: 24px;
+  height: 26px;
+  /*background-color: pink;*/
+}
+.txt-action .del{
+  position: relative;
+  margin-right: 10px;
+}
+.txt-action .del .del-t{
+
+  width: 20px;
+  height: 5px;
+  background:  url(../images/delete_up.png) 0 0 no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+ /* transition: transform .5s;
+  transform-origin: left bottom;*/
+}
+.txt-action .del .del-b{
+
+  width: 18px;
+  height: 18px;
+  background:  url(../images/delete_down.png) 0 0 no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+/*删除警告框*/
+.remind-cont{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*display: none;*/
+  transition: all .6s;
+}
+.cont-div{
+  height: 160px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.cont-div .cont{
+  text-align: center;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

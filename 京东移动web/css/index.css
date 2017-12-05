@@ -1,0 +1,331 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+body{
+  background-color: #f0f0f0;
+}
+
+
+/*头部*/
+.jd-header{
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  z-index: 10;
+}
+.jd-header .left{
+  width: 75px;
+  height: 40px;
+  float: left;
+  position: relative;
+}
+.jd-header .left:before{
+  content: "";
+  width: 56px;
+  height: 20px;
+  /*background-color: deeppink;*/
+  background-position: 0 -110px;
+}
+
+.jd-header .right {
+  width: 48px;
+  height: 40px;
+  float: right;
+  text-align: center;
+}
+.jd-header .right a{
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  text-decoration: none;
+}
+.jd-header .center {
+  height: 40px;
+  margin: 0 48px 0 75px;
+  position: relative;
+}
+.jd-header .center input {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-indent: 33px;
+  position: absolute;
+  top: 50%;
+  border: none;
+  transform:translateY(-50%);
+}
+ .center:before {
+   content: "";
+  width: 20px;
+  height: 20px;
+   position: absolute;
+   left: 10px;
+   z-index: 10;
+   top: 50%;
+   transform:translateY(-50%);
+  background-position: -60px -110px;
+}
+
+
+ /*轮播图部分*/
+.banner{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+section ul{
+  width: 100%;
+  /* 这里面的高度需要在js里面动态获取出来 */
+ /*height: 167px;*/
+}
+.banner>ul>li{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform:translateX(200%);
+  /* 这里面不要用left去移动位置，因为这样的话整个li的原点就被移动了 */
+}
+.banner img{
+  width: 100%;
+}
+.points {
+  /* 这个盒子的宽度是未知，要实现一个未知盒子居中 */
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  bottom: 10px;
+  overflow: hidden;
+}
+.points li {
+  width: 5px;
+  height: 5px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  margin: 0 2px;
+  float: left;
+}
+.points .active{
+  background-color: #fff;
+}
+
+/*导航部分*/
+.jd-nav{
+  width: 100%;
+  overflow: hidden;
+}
+.jd-nav .w20{
+  width: 20%;
+  float: left;
+
+}
+.jd-nav .w20 a{
+  display: block;
+  padding: 10px;
+}
+.jd-nav .w20 a img{
+  width: 100%;
+}
+.jd-nav li p {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+/*京东新闻部分*/
+.jd-news{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 8px;
+  background-color: #fff;
+  margin-top: 10px;
+  position: relative;
+}
+.jd-news-left{
+  width: 76px;
+  height: 30px;
+  float: left;
+  position: relative;
+}
+.jd-news-left img{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform:translate3d(0,-50%,0);
+}
+.jd-news-center{
+  margin-left: 76px;
+  height: 30px;
+margin-right: 40px;
+  overflow: hidden;
+}
+.jd-news-center li a{
+  display: block;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 10px;
+  text-indent: 20px;
+  color: #969696;
+  font-family:"Microsoft YaHei";
+}
+.jd-news-right{
+  width: 40px;
+  height: 30px;
+  float: right;
+}
+.jd-news-right a{
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 30px;
+  text-align:center;
+  color: #969696;
+  font-family:"Microsoft YaHei";
+}
+
+
+/*京东秒杀部分*/
+.jd-seckill{
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 8px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.jd-seckill-header{
+  width: 100%;
+  /*background-color: pink;*/
+}
+.jd-seckill-header-l{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  /*background-color: #ccc;*/
+  text-align: center;
+  position: relative;
+  float: left;
+}
+.jd-seckill-header-l:before{
+  content: "";
+  width: 18px;
+  height: 20px;
+  left: 0px;
+  background-position: -85px -112px;
+}
+.jd-seckill-header-l p{
+  text-indent: 16px;
+  letter-spacing: 5px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #D90000;
+  font-family:"Microsoft YaHei";
+}
+.jd-seckill-header-r{
+  width: 80px;
+  height: 30px;
+  float: right;
+}
+.jd-seckill-header-r a{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 30px;
+  text-align:center;
+  color: #969696;
+  font-family:"Microsoft YaHei";
+}
+.jd-seckill-header-c{
+  margin-left: 100px;
+  margin-right: 80px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #969696;
+  font-family:"Microsoft YaHei";
+
+}
+.jd-seckill-header-c span{
+  color: #fff;
+  background-color: #000000;
+  font-size: 16px;
+}
+.jd-seckill-header-c span:nth-child(3),
+.jd-seckill-header-c span:nth-child(6){
+  background: none;
+  color: #222;
+}
+.jd-seckill-same{
+  width: 100%;
+  /*background-color: pink;*/
+  overflow: auto;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling : touch;
+}
+.jd-seckill-same ul{
+  /* 先写一个死的 后面用JS动态去求 */
+  width: 1500px;
+}
+.jd-seckill-same ul li{
+  width: 80px;
+  float: left;
+
+}
+.jd-seckill-same li a {
+  display: block;
+  width: 100%;
+  border-right: 1px solid #ccc;
+  padding:10px 0;
+  text-decoration: none;
+}
+.jd-seckill-same li img {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+}
+.jd-seckill-same li p {
+  text-align: center;
+  font-size: 14px;
+  color: #D90000;
+  font-family:"Microsoft YaHei";
+}
+
+
+
+.jd-seckill-body{
+  width: 100%;
+  overflow: hidden;
+}
+.jd-seckill-body ul li{
+  width: 33%;
+  float: left;
+  box-sizing: border-box;
+}
+.jd-seckill-body ul li img{
+  width: 100%;
+}
+.jd-seckill-body ul li .price{
+  margin-top: 10px;
+  margin-left:15px;
+  color: #D90000;
+  font-size: 14px;
+  font-family:"Microsoft YaHei";
+}
+
+
+
+
+
+
+
+
+
+
+

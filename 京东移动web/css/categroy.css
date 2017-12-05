@@ -1,0 +1,119 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+/*头部：可以作为标准样式在多个页面使用*/
+.common-header{
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(to bottom,#fff,#e0e0e0);
+  position: fixed;
+}
+.common-header-l{
+  width: 40px;
+  height: 44px;
+  position: relative;
+}
+.common-header-l:before{
+  width: 13px;
+  height: 20px;
+  background-position:-24px 0
+}
+.common-header-r {
+  width: 42px;
+  height: 44px;
+  position: relative;
+}
+.common-header-r:before{
+  width: 18px;
+  height: 20px;
+  background-position: -60px 0;
+}
+.common-header-c{
+  margin-left: 40px;
+  margin-right: 42px;
+  height: 44px;
+}
+.common-header-c input[type="search"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-top: 7px;
+  text-indent: 5px;
+}
+
+
+/*主题内容部分*/
+html,body{
+  height:100%;
+}
+.cont-main{
+  padding-top: 45px;
+  box-sizing: border-box;
+  height: 100%;
+  /*background-color: pink;*/
+}
+
+
+.cont-main-l{
+  width: 74px;
+  height: 100%;
+  overflow: hidden;
+  border-right: 1px solid #ccc;
+}
+.cont-main-l li {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.cont-main-l li a{
+  text-decoration: none;
+  color: #969696;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+
+.cont-main-r {
+  height: 100%;
+  margin-left: 75px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+.cont-main-r .scroll-wrap{
+  width: 100%;
+}
+.scroll-wrap img{
+  width: 100%;
+}
+.cont-main-r .recommend{
+  width: 100%;
+  margin: 10px 0;
+}
+.cont-main-r .recommend h3{
+  font-size: 16px;
+  line-height: 2;
+}
+.cont-main-r .recommend li{
+  width: 33.33%;
+  float: left;
+  background-color: #fff;
+}
+.cont-main-r .recommend li p{
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+
+
+
+
